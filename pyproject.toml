@@ -1,0 +1,6 @@
+[project]
+name = "jira-docs-pipeline"
+version = "0.1.0"
+description = "Jira documentation ingestion pipeline"
+requires-python = ">=3.10"
+dependencies = []

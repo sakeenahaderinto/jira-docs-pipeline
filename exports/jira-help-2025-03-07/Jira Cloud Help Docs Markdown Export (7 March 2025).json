@@ -1,0 +1,76 @@
+{
+  "export_id": "jira-help-docs-2025-03-07",
+  "export_date": "2025-03-07",
+  "export_format_version": "2.1",
+  "source_system": "Atlassian Help CMS (support.atlassian.com)",
+  "export_owner": "Gabriel Lindqvist, Documentation Operations Lead, Jira Documentation",
+  "content_owner": "Noriko Adebayo, Senior Technical Writer, Jira Documentation",
+  "record_count": 40,
+  "docs": [
+    {
+      "doc_id": "JCH-0001",
+      "source_file": "administration/manage-project-permissions.md",
+      "title": "Manage project permissions",
+      "product_area": "Permissions and security",
+      "url": "https://support.atlassian.com/jira-cloud-administration/docs/manage-project-permissions/",
+      "last_updated": "2025-02-18",
+      "headings": "[\"Before you begin\", \"Grant a project permission\", \"Remove a project permission\", \"Troubleshoot permission errors\"]",
+      "body_markdown": "---\ntitle: Manage project permissions\nsource_url: https://support.atlassian.com/jira-cloud-administration/docs/manage-project-permissions/\nlast_updated: 2025-02-18\n---\n# Manage project permissions\n\nProject permissions control who can see and act on issues in a company-managed project. Each permission is granted to a project role, a group, an application access level, or a single user, and those grants live in the permission scheme that the project uses. Changing a grant affects every project that shares the scheme.\n\n## Before you begin\n\nYou need the **Administer Jira** global permission, or the **Administer projects** permission for the project you want to change. Team-managed projects use access roles instead of permission schemes, so the steps below don't apply to them.\n\n## Grant a project permission\n\n1. Go to **Settings** > **Issues** > **Permission schemes**.\n2. Find the scheme your project uses and select **Permissions**.\n3. Next to the permission you want to change, select **Edit**.\n4. Choose who to grant it to (e.g. **Project role**, **Group**, or **Any logged-in user**).\n5. Select **Grant**.\n\nGrants take effect immediately, although browser caching can delay what a user sees for up to a minute.\n\n## Remove a project permission\n\n1. Open the permission scheme and select **Permissions**.\n2. Next to the grant you want to drop, select **Remove**.\n3. Confirm the change.\n\n> **Note:** Removing **Browse projects** from a group removes that group's access to the project's issues, boards, and dashboards, i.e. the project disappears from their project list entirely.\n\n## Troubleshoot permission errors\n\nIf someone reports that they can't see an issue they expect to see, check the project's permission scheme first, then check whether an issue security level is restricting the individual issue.",
+      "word_count": 298
+    },
+    {
+      "doc_id": "JCH-0002",
+      "source_file": "administration/manage-permission-schemes.md",
+      "title": "What are permission schemes?",
+      "product_area": "Permissions and security",
+      "url": "https://support.atlassian.com/jira-cloud-administration/docs/manage-permission-schemes/",
+      "last_updated": "2025-01-28",
+      "headings": "[\"How permission schemes work\", \"Before you begin\", \"Create a permission scheme\", \"Before you begin\", \"Associate a scheme with a project\"]",
+      "body_markdown": "---\ntitle: What are permission schemes?\nsource_url: https://support.atlassian.com/jira-cloud-administration/docs/manage-permission-schemes/\nlast_updated: 2025-01-28\n---\n# What are permission schemes?\n\nA permission scheme is a named set of project permission grants. One scheme can be shared by many company-managed projects, which keeps access rules consistent without repeating the same configuration in every project.\n\n## How permission schemes work\n\nEach scheme lists every project permission (e.g. **Browse projects**, **Create issues**, **Transition issues**) and who holds it. A user gets a permission if any one of its grants applies to them. Grants are additive, i.e. there is no deny rule.\n\n## Before you begin\n\nCreating a scheme requires the **Administer Jira** global permission.\n\n## Create a permission scheme\n\n1. Go to **Settings** > **Issues** > **Permission schemes**.\n2. Select **Add permission scheme**.\n3. Enter a name and a short description that says which projects it is for.\n4. Select **Add**, then select **Permissions** to add grants.\n\nWe recommend granting permissions to project roles rather than to named users, so project admins can manage membership themselves.\n\n## Before you begin\n\nSwitching a project's scheme changes access for everyone in that project at once. Tell project admins before you do it.\n\n## Associate a scheme with a project\n\n1. Open the project, then go to **Project settings** > **Permissions**.\n2. Select **Actions** > **Use a different scheme**.\n3. Choose the scheme and select **Associate**.\n\n> **Note:** A project can use exactly one permission scheme at a time. Deleting a scheme is only possible once no project is associated with it.",
+      "word_count": 265
+    },
+    {
+      "doc_id": "JCH-0003",
+      "source_file": "administration/grant-browse-projects-to-a-group.md",
+      "title": "Grant the Browse projects permission to a group",
+      "product_area": "Permissions and security",
+      "url": "https://support.atlassian.com/jira-cloud-administration/docs/manage-project-permissions/",
+      "last_updated": "2025-03-04",
+      "headings": "[\"Before you begin\", \"Grant the Browse projects permission {#browse-projects}\", \"Check that the group can see the project\"]",
+      "body_markdown": "---\ntitle: Grant the Browse projects permission to a group\nsource_url: https://support.atlassian.com/jira-cloud-administration/docs/manage-project-permissions/\nlast_updated: 2025-03-04\n---\n# Grant the Browse projects permission to a group\n\n**Browse projects** is the permission that lets a user open a project and see its issues, boards, backlog, and dashboards. If a group reports that a project is missing from their project list, this is almost always the permission to check.\n\n## Before you begin\n\nMake sure the group already exists and has members. Groups are managed in **Administration** > **Groups**, not in project settings. The users in the group also need product access to Jira, because a project permission cannot grant access on its own.\n\n## Grant the Browse projects permission {#browse-projects}\n\n1. Go to **Settings** > **Issues** > **Permission schemes**.\n2. Select the scheme used by the project.\n3. Find **Browse projects** and select **Edit**.\n4. Select **Group**, then choose the group from the list.\n5. Select **Grant**.\n\nIf several projects share the scheme, the group gains browse access to all of them. To limit access to one project, copy the scheme first and associate the copy with that project only.\n\n## Check that the group can see the project\n\nAsk a member of the group to reload their project list, or use **Permission helper** in **Settings** > **Issues** to test a specific user against a specific issue. Permission helper shows each grant that was evaluated and why it passed or failed, which is faster than reading the scheme by hand.",
+      "word_count": 251
+    },
+    {
+      "doc_id": "JCH-0004",
+      "source_file": "administration/what-are-issue-security-levels.md",
+      "title": "What are issue security levels?",
+      "product_area": "Permissions and security",
+      "url": "https://support.atlassian.com/jira-cloud-administration/docs/configure-issue-security-schemes/",
+      "last_updated": "07/02/2025",
+      "headings": "[\"How issue security differs from project permissions\", \"Create an issue security scheme\", \"Add security levels\", \"Set a default level\"]",
+      "body_markdown": "---\ntitle: What are issue security levels?\nsource_url: https://support.atlassian.com/jira-cloud-administration/docs/configure-issue-security-schemes/\nlast_updated: 07/02/2025\n---\n# What are issue security levels?\n\nIssue security levels restrict individual issues to named people, even when everyone in the project has **Browse projects**. Levels are defined in an issue security scheme, which is then associated with a project.\n\n## How issue security differs from project permissions\n\nProject permissions decide what a user can do across a whole project. An issue security level narrows visibility down to a single issue. If an issue has a security level set and the user is not in that level, the issue is hidden from search, boards, and reports, i.e. it behaves as if it does not exist.\n\n## Create an issue security scheme\n\n1. Go to **Settings** > **Issues** > **Issue security schemes**.\n2. Select **Add issue security scheme**.\n3. Enter a name and description, then select **Add**.\n\n## Add security levels\n\n1. Select **Security levels** next to your scheme.\n2. Enter a level name (e.g. `Reporter and approvers only`) and select **Add security level**.\n3. Select **Add** in the level's row to choose who it applies to: a project role, a group, the reporter, the assignee, or a user field.\n\n## Set a default level\n\nSelect **Default** on a level to apply it to new issues automatically. Users who cannot see the default level can still create issues, but they will lose sight of them after creation, so use a default sparingly.\n\n> **Note:** Users need the **Set issue security** permission to change the level on an issue.",
+      "word_count": 262
+    },
+    {
+      "doc_id": "JCH-0005",
+      "source_file": "administration/Manage_Global_Permissions.md",
+      "title": "Manage global permissions",
+      "product_area": "Permissions and security",
+      "url": "https://support.atlassian.com/jira-cloud-administration/docs/manage-global-permissions/",
+      "last_updated": "2024-12-16",
+      "headings": "[\"Available global permissions\", \"Grant a global permission\", \"Remove a global permission\"]",
+      "body_markdown": "---\ntitle: Manage global permissions\nsource_url: https://support.atlassian.com/jira-cloud-administration/docs/manage-global-permissions/\nlast_updated: 2024-12-16\n---\n# Manage global permissions\n\nGlobal permissions apply across your whole Jira site rather than to one project. They are granted to groups only, never to individual users.\n\n## Available global permissions\n\n- **Administer Jira** - full administrative access to schemes, fields, and workflows.\n- **Browse users and groups** - see user and group pickers when assigning work or sharing filters.\n- **Create team-managed projects** - create projects that are configured by their own team.\n- **Share dashboards and filters** - share with groups and projects rather than individuals.\n- **Manage group filter subscriptions** - create filter subscriptions for other groups.\n- **Bulk change** - run bulk edit, move, and transition operations.\n\n## Grant a global permission\n\n1. Go to **Settings** > **System** > **Global permissions**.\n2. Under **Grant permission**, choose the permission.\n3. Choose the group, then select **Add**.\n\nKeep **Administer Jira** limited to a small, named group. Everyone in that group can change configuration for every project on the site.\n\n## Remove a global permission\n\n1. Open **Global permissions**.\n2. Find the row for the permission and group.\n3. Select **Delete**, then confirm.\n\n> **Note:** Jira prevents you from removing the last **Administer Jira** grant, so you cannot lock every administrator out of the site.",
+      "word_count": 221
+    },
+    {
+      "doc_id": "JCH-0006",
+      "source_file": "administration/manage-project-roles.md",
+      "title": "Manage project roles and their members",
+      "product_area": "Permissions and security",
+      "url": "https://support.atlassian.com/jira-cloud-administration/docs/manage-project-roles/",
+      "last_updated": null,
+      "headings": "[\"Default project roles\", \"Add a project role\", \"Add members to a role in a project\", \"Set default members\"]",
+      "body_markdown": ""
+    }
+  ]
+}

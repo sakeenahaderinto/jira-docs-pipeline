@@ -31,6 +31,41 @@ def load_pages(exports_dir):
         dates, heads = page["last_updated"], page["headings"]
         print(inventory_line(page))
 
+def body_metadata_flags(page: dict) -> list[tuple[str, str]]:
+    """Compare repeated lineage values in this export's flat front matter and H1."""
+    body = page.get("body_markdown")
+    if not isinstance(body, str):
+        return []
+    lines = body.splitlines()
+    flags = []
+    content_start = 0
+    if lines and lines[0] == "---" and "---" in lines[1:]:
+        content_start = lines.index("---", 1) + 1
+        field_names = {"title": "title", "source_url": "url", "last_updated": "last_updated"}
+        for line in lines[1:content_start - 1]:
+            key, separator, value = line.partition(":")
+            field = field_names.get(key.strip())
+            if not separator or field is None:
+                continue
+            value = value.strip()
+            # The export uses flat scalar metadata, not nested YAML.
+            if len(value) >= 2 and value[0] == value[-1] and value[0] in ("'", '"'):
+                value = value[1:-1]
+            if field in page and page[field] != value:
+                flags.append((field, f"disagrees with body_markdown front matter {key.strip()}: "
+                              f"record={json.dumps(page[field], ensure_ascii=False)}, "
+                              f"body={json.dumps(value, ensure_ascii=False)}"))
+    for line in lines[content_start:]:
+        if line.startswith("# "):
+            title = re.sub(r"\s+#+\s*$", "", line[2:].strip())
+            if "title" in page and page["title"] != title:
+                flags.append(("title", "disagrees with body_markdown H1: "
+                              f"record={json.dumps(page['title'], ensure_ascii=False)}, "
+                              f"body={json.dumps(title, ensure_ascii=False)}"))
+            break
+    return flags
+
+
 def page_flags(page: dict, url_pages: dict | None = None) -> list[tuple[str, str]]:
     """Return lineage gaps without repairing or coercing export values."""
     flags = []
@@ -92,6 +127,7 @@ def page_flags(page: dict, url_pages: dict | None = None) -> list[tuple[str, str
     url = page.get("url")
     if url_pages and isinstance(url, str) and len(url_pages.get(url, [])) > 1:
         flags.append(("url", "shared by pages: " + json.dumps(url_pages[url], ensure_ascii=False)))
+    flags.extend(body_metadata_flags(page))
     return flags
 
 

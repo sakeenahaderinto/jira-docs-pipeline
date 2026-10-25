@@ -12,6 +12,7 @@ in `YYYY-MM-DD` format. Headings must be a non-empty list matching all lines
 starting with `#` in the Markdown body, including H1, in order (heading markers
 are removed). JSON-encoded strings are flagged as not lists, without coercion.
 For diagnostics only, JSON-encoded headings are decoded to flag repeated section titles within a page. Shared URLs are flagged on every affected page with the titles and source files of all matching records. Gap totals count affected pages per field, even when a page has multiple reasons. Fields with no gaps explicitly report zero.
+The loader compares record titles, URLs, and dates with the flat Markdown front matter and titles with the body H1. Disagreement flags include both values without selecting or rewriting either value.
 The loader also flags exports whose declared `record_count` differs from the
 number of page entries actually present in `docs`.
 

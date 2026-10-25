@@ -2,7 +2,7 @@
 
 Source: `exports/jira-help-2025-03-07/Jira Cloud Help Docs Markdown Export (7 March 2025).json`. The requested filename `atlassian_jira_cloud_help_docs_export_2025-03-07.json` was not present; this available export contains 40 pages.
 
-`inventory_output.txt` contains the full loader printout: 93 lines (40 page lines, 46 flag lines, and 7 summary lines). Counts below are affected pages per field; a page can have gaps in multiple fields.
+`inventory_output.txt` contains the full loader printout: 99 lines (40 page lines, 52 flag lines, and 7 summary lines). Counts below are affected pages per field; a page can have gaps in multiple fields.
 
 ## Gap counts
 
@@ -11,7 +11,7 @@ Source: `exports/jira-help-2025-03-07/Jira Cloud Help Docs Markdown Export (7 Ma
 | source_file | 0 |
 | title | 0 |
 | url | 2 |
-| last_updated | 3 |
+| last_updated | 7 |
 | headings | 40 |
 
 ## Shared URLs
@@ -20,11 +20,19 @@ Both `Manage project permissions` (`administration/manage-project-permissions.md
 
 ## last_updated
 
-| Page | Exported value | Reason |
-| --- | --- | --- |
-| What are issue security levels? | `"07/02/2025"` | must be a real ISO date (YYYY-MM-DD) |
-| Manage project roles | `null` | empty |
-| Add, edit, and delete an issue type | `"14/01/2025"` | must be a real ISO date (YYYY-MM-DD) |
+The loader compares record metadata with the body's flat front matter (`title`, `source_url`, and `last_updated`) and compares the title with the body H1. Both conflicting values are printed without choosing a fallback or changing the export. No title or URL disagreements were found in this export.
+
+| Page | Exported value | Body front matter | Reasons |
+| --- | --- | --- | --- |
+| What are issue security levels? | `"07/02/2025"` | `07/02/2025` | must be a real ISO date (YYYY-MM-DD) |
+| Manage project roles | `null` | `2025-02-05` | empty; disagrees with body |
+| Use advanced search with Jira Query Language (JQL) | `2025-02-04` | `2025-01-27` | disagrees with body |
+| Use smart values in automation rules | `2025-01-14` | `2024-12-19` | disagrees with body |
+| Configure outgoing email notifications | `2025-02-04` | `2025-01-14` | disagrees with body |
+| Add, edit, and delete an issue type | `14/01/2025` | `2025-01-14` | must be a real ISO date (YYYY-MM-DD); disagrees with body |
+| Configure quick filters on a board | `2025-02-11` | `2025-01-30` | disagrees with body |
+
+Six pages have date disagreements, and three have empty or invalid record dates. Two pages occur in both groups, giving seven affected pages rather than nine.
 
 ## headings
 

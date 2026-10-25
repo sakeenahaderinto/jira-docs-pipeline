@@ -15,10 +15,12 @@ FLAG headings not a list
 PAGE source_file="administration/manage-project-roles.md" | title="Manage project roles" | url="https://support.atlassian.com/jira-cloud-administration/docs/manage-project-roles/" | last_updated=null | headings="[\"Default project roles\", \"Create a project role\", \"Add people to a project role\"]"
 FLAG last_updated empty
 FLAG headings not a list
+FLAG last_updated disagrees with body_markdown front matter last_updated: record=null, body="2025-02-05"
 PAGE source_file="jira-software/create-an-issue-and-a-subtask.md" | title="Create an issue and a subtask" | url="https://support.atlassian.com/jira-software-cloud/docs/create-an-issue-and-a-subtask/" | last_updated="2025-01-09" | headings="[\"Create an issue\", \"Create a subtask\", \"Convert an issue to a subtask\"]"
 FLAG headings not a list
 PAGE source_file="jira-software/use-advanced-search-with-jira-query-language-jql.md" | title="Use advanced search with Jira Query Language (JQL)" | url="https://support.atlassian.com/jira-software-cloud/docs/use-advanced-search-with-jira-query-language-jql/" | last_updated="2025-02-04" | headings="[\"Run an advanced search\", \"Query structure\", \"Examples\"]"
 FLAG headings not a list
+FLAG last_updated disagrees with body_markdown front matter last_updated: record="2025-02-04", body="2025-01-27"
 PAGE source_file="administration/add-a-transition-to-a-workflow.md" | title="Add a transition to a workflow" | url="https://support.atlassian.com/jira-cloud-administration/docs/add-a-transition-to-a-workflow/" | last_updated="2024-12-11" | headings="[\"Before you begin\", \"Add a transition\", \"Add a condition or validator\", \"Publish the workflow\"]"
 FLAG headings not a list
 PAGE source_file="software/configure-columns.md" | title="Configure columns on a board" | url="https://support.atlassian.com/jira-software-cloud/docs/configure-columns/" | last_updated="2025-01-14" | headings="[\"Before you begin\", \"Add or rename a column\", \"Map statuses to columns\", \"Set column constraints\"]"
@@ -35,6 +37,7 @@ PAGE source_file="software/configure-swimlanes.md" | title="Configure swimlanes 
 FLAG headings not a list
 PAGE source_file="software/what-are-smart-values.md" | title="Use smart values in automation rules" | url="https://support.atlassian.com/jira-software-cloud/docs/what-are-smart-values/" | last_updated="2025-01-14" | headings="[\"How smart values work\", \"Common smart values\", \"Format dates and text\", \"Troubleshoot empty values\"]"
 FLAG headings not a list
+FLAG last_updated disagrees with body_markdown front matter last_updated: record="2025-01-14", body="2024-12-19"
 PAGE source_file="work-management/manage-your-notification-settings.md" | title="Manage your personal notification settings" | url="https://support.atlassian.com/jira-work-management/docs/manage-your-notification-settings/" | last_updated="2025-02-26" | headings="[\"Change your email notifications\", \"Choose a batching option\", \"Stop watching an issue\", \"Why you still get some emails\"]"
 FLAG headings not a list
 PAGE source_file="software/edit-multiple-issues-at-the-same-time.md" | title="Edit multiple issues at the same time" | url="https://support.atlassian.com/jira-software-cloud/docs/edit-multiple-issues-at-the-same-time/" | last_updated="2024-12-11" | headings="[\"Before you begin\", \"Start a bulk change\", \"Choose a bulk operation\", \"Limits on bulk changes\"]"
@@ -51,6 +54,7 @@ PAGE source_file="boards/use-your-scrum-backlog.md" | title="Use your Scrum back
 FLAG headings not a list
 PAGE source_file="administration/configure-outgoing-email.md" | title="Configure outgoing email notifications" | url="https://support.atlassian.com/jira-cloud-administration/docs/configure-outgoing-email/" | last_updated="2025-02-04" | headings="[\"Before you begin\", \"Turn outgoing email on or off\", \"Change the sender address\", \"Check the mail queue\"]"
 FLAG headings not a list
+FLAG last_updated disagrees with body_markdown front matter last_updated: record="2025-02-04", body="2025-01-14"
 PAGE source_file="administration/configure-workflow-schemes.md" | title="Configure workflow schemes" | url="https://support.atlassian.com/jira-cloud-administration/docs/configure-workflow-schemes/" | last_updated="2025-03-03" | headings="[\"How workflow schemes work\", \"Before you begin\", \"Assign a workflow to an issue type\", \"Switch a project to a different workflow scheme\"]"
 FLAG headings not a list
 PAGE source_file="administration/create-a-custom-field.md" | title="Create a custom field" | url="https://support.atlassian.com/jira-cloud-administration/docs/create-a-custom-field/" | last_updated="2025-02-06" | headings="[\"Before you begin\", \"Add a custom field\", \"Set the field context\", \"Add the field to a screen\"]"
@@ -68,6 +72,7 @@ FLAG headings not a list
 PAGE source_file="administration/add-edit-and-delete-an-issue-type.md" | title="Add, edit, and delete an issue type" | url="https://support.atlassian.com/jira-cloud-administration/docs/add-edit-and-delete-an-issue-type/" | last_updated="14/01/2025" | headings="[\"Before you begin\", \"Add an issue type\", \"Edit an issue type\", \"Delete an issue type\"]"
 FLAG last_updated must be a real ISO date (YYYY-MM-DD)
 FLAG headings not a list
+FLAG last_updated disagrees with body_markdown front matter last_updated: record="14/01/2025", body="2025-01-14"
 PAGE source_file="administration/audit-activities-in-jira-applications.md" | title="Audit activities in Jira applications" | url="https://support.atlassian.com/jira-cloud-administration/docs/audit-activities-in-jira-applications/" | last_updated="2025-02-26" | headings="[\"Before you begin\", \"View the audit log\", \"Search and filter audit records\", \"Export audit records\"]"
 FLAG headings not a list
 PAGE source_file="software/start-a-sprint.md" | title="Start a sprint" | url="https://support.atlassian.com/jira-software-cloud/docs/start-a-sprint/" | last_updated="2025-01-14" | headings="[\"Before you begin\", \"Start a sprint from the backlog\", \"Set the sprint duration and goal\", \"Run more than one sprint at a time\"]"
@@ -82,6 +87,7 @@ PAGE source_file="administration/customize-the-look-and-feel-of-jira-application
 FLAG headings not a list
 PAGE source_file="software/configure-quick-filters.md" | title="Configure quick filters on a board" | url="https://support.atlassian.com/jira-software-cloud/docs/configure-quick-filters/" | last_updated="2025-02-11" | headings="[\"Before you begin\", \"Add a quick filter\", \"Example quick filters\", \"Edit or delete a quick filter\"]"
 FLAG headings not a list
+FLAG last_updated disagrees with body_markdown front matter last_updated: record="2025-02-11", body="2025-01-30"
 PAGE source_file="work-management/use-the-summary-view.md" | title="Track project progress in the summary view" | url="https://support.atlassian.com/jira-work-management/docs/use-the-summary-view/" | last_updated="2025-03-07" | headings="[\"Open the summary view\", \"What the summary view shows\", \"Filter the summary view\", \"Share a summary with your team\"]"
 FLAG headings not a list
 Total pages: 40
@@ -89,5 +95,5 @@ Pages with lineage gaps: 40
 source_file gaps: 0
 title gaps: 0
 url gaps: 2
-last_updated gaps: 3
+last_updated gaps: 7
 headings gaps: 40

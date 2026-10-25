@@ -1,0 +1,89 @@
+PAGE source_file="administration/manage-project-permissions.md" | title="Manage project permissions" | url="https://support.atlassian.com/jira-cloud-administration/docs/manage-project-permissions/" | last_updated="2025-02-18" | headings="[\"Before you begin\", \"Grant a project permission\", \"Remove a project permission\", \"Troubleshoot permission errors\"]"
+FLAG headings not a list
+PAGE source_file="administration/manage-permission-schemes.md" | title="What are permission schemes?" | url="https://support.atlassian.com/jira-cloud-administration/docs/manage-permission-schemes/" | last_updated="2025-01-28" | headings="[\"How permission schemes work\", \"Before you begin\", \"Create a permission scheme\", \"Before you begin\", \"Associate a scheme with a project\"]"
+FLAG headings not a list
+PAGE source_file="administration/grant-browse-projects-to-a-group.md" | title="Grant the Browse projects permission to a group" | url="https://support.atlassian.com/jira-cloud-administration/docs/manage-project-permissions/" | last_updated="2025-03-04" | headings="[\"Before you begin\", \"Grant the Browse projects permission {#browse-projects}\", \"Check that the group can see the project\"]"
+FLAG headings not a list
+PAGE source_file="administration/what-are-issue-security-levels.md" | title="What are issue security levels?" | url="https://support.atlassian.com/jira-cloud-administration/docs/configure-issue-security-schemes/" | last_updated="07/02/2025" | headings="[\"How issue security differs from project permissions\", \"Create an issue security scheme\", \"Add security levels\", \"Set a default level\"]"
+FLAG last_updated must be a real ISO date (YYYY-MM-DD)
+FLAG headings not a list
+PAGE source_file="administration/Manage_Global_Permissions.md" | title="Manage global permissions" | url="https://support.atlassian.com/jira-cloud-administration/docs/manage-global-permissions/" | last_updated="2024-12-16" | headings="[\"Available global permissions\", \"Grant a global permission\", \"Remove a global permission\"]"
+FLAG headings not a list
+PAGE source_file="administration/manage-project-roles.md" | title="Manage project roles" | url="https://support.atlassian.com/jira-cloud-administration/docs/manage-project-roles/" | last_updated=null | headings="[\"Default project roles\", \"Create a project role\", \"Add people to a project role\"]"
+FLAG last_updated empty
+FLAG headings not a list
+PAGE source_file="jira-software/create-an-issue-and-a-subtask.md" | title="Create an issue and a subtask" | url="https://support.atlassian.com/jira-software-cloud/docs/create-an-issue-and-a-subtask/" | last_updated="2025-01-09" | headings="[\"Create an issue\", \"Create a subtask\", \"Convert an issue to a subtask\"]"
+FLAG headings not a list
+PAGE source_file="jira-software/use-advanced-search-with-jira-query-language-jql.md" | title="Use advanced search with Jira Query Language (JQL)" | url="https://support.atlassian.com/jira-software-cloud/docs/use-advanced-search-with-jira-query-language-jql/" | last_updated="2025-02-04" | headings="[\"Run an advanced search\", \"Query structure\", \"Examples\"]"
+FLAG headings not a list
+PAGE source_file="administration/add-a-transition-to-a-workflow.md" | title="Add a transition to a workflow" | url="https://support.atlassian.com/jira-cloud-administration/docs/add-a-transition-to-a-workflow/" | last_updated="2024-12-11" | headings="[\"Before you begin\", \"Add a transition\", \"Add a condition or validator\", \"Publish the workflow\"]"
+FLAG headings not a list
+PAGE source_file="software/configure-columns.md" | title="Configure columns on a board" | url="https://support.atlassian.com/jira-software-cloud/docs/configure-columns/" | last_updated="2025-01-14" | headings="[\"Before you begin\", \"Add or rename a column\", \"Map statuses to columns\", \"Set column constraints\"]"
+FLAG headings not a list
+PAGE source_file="administration/create-and-edit-jira-automation-rules.md" | title="Create and edit Jira automation rules" | url="https://support.atlassian.com/jira-cloud-administration/docs/create-and-edit-jira-automation-rules/" | last_updated="2025-02-25" | headings="[\"How rules are built\", \"Create a rule\", \"Use smart values\", \"Check the audit log\"]"
+FLAG headings not a list
+PAGE source_file="administration/create-a-notification-scheme.md" | title="Create a notification scheme" | url="https://support.atlassian.com/jira-cloud-administration/docs/create-a-notification-scheme/" | last_updated="2025-01-07" | headings="[\"Before you begin\", \"Create a scheme\", \"Add a notification\", \"Associate the scheme with a project\"]"
+FLAG headings not a list
+PAGE source_file="software/jql-functions.md" | title="Use functions in JQL queries" | url="https://support.atlassian.com/jira-software-cloud/docs/jql-functions/" | last_updated="2025-02-04" | headings="[\"How functions work\", \"Commonly used functions\", \"Combine functions with operators\", \"Limitations\"]"
+FLAG headings not a list
+PAGE source_file="administration/configure-jira-application-options.md" | title="Configure Jira application options" | url="https://support.atlassian.com/jira-cloud-administration/docs/configure-jira-application-options/" | last_updated="2025-01-09" | headings="[\"Before you begin\", \"Change general settings\", \"Set the default language and time zone\", \"Options that affect every project\"]"
+FLAG headings not a list
+PAGE source_file="software/configure-swimlanes.md" | title="Configure swimlanes on a board" | url="https://support.atlassian.com/jira-software-cloud/docs/configure-swimlanes/" | last_updated="2024-12-11" | headings="[\"Swimlane types\", \"Change how swimlanes are grouped\", \"Create query-based swimlanes\", \"Reorder or remove swimlanes\"]"
+FLAG headings not a list
+PAGE source_file="software/what-are-smart-values.md" | title="Use smart values in automation rules" | url="https://support.atlassian.com/jira-software-cloud/docs/what-are-smart-values/" | last_updated="2025-01-14" | headings="[\"How smart values work\", \"Common smart values\", \"Format dates and text\", \"Troubleshoot empty values\"]"
+FLAG headings not a list
+PAGE source_file="work-management/manage-your-notification-settings.md" | title="Manage your personal notification settings" | url="https://support.atlassian.com/jira-work-management/docs/manage-your-notification-settings/" | last_updated="2025-02-26" | headings="[\"Change your email notifications\", \"Choose a batching option\", \"Stop watching an issue\", \"Why you still get some emails\"]"
+FLAG headings not a list
+PAGE source_file="software/edit-multiple-issues-at-the-same-time.md" | title="Edit multiple issues at the same time" | url="https://support.atlassian.com/jira-software-cloud/docs/edit-multiple-issues-at-the-same-time/" | last_updated="2024-12-11" | headings="[\"Before you begin\", \"Start a bulk change\", \"Choose a bulk operation\", \"Limits on bulk changes\"]"
+FLAG headings not a list
+PAGE source_file="administration/configure-advanced-issue-workflows.md" | title="Add conditions and validators to a workflow transition" | url="https://support.atlassian.com/jira-cloud-administration/docs/configure-advanced-issue-workflows/" | last_updated="2025-01-09" | headings="[\"Conditions, validators and post functions\", \"Add a condition\", \"Add a validator\", \"Publish your changes\"]"
+FLAG headings not a list
+PAGE source_file="software/save-your-search-as-a-filter.md" | title="Save your search as a filter" | url="https://support.atlassian.com/jira-software-cloud/docs/save-your-search-as-a-filter/" | last_updated="2025-02-04" | headings="[\"Save a filter\", \"Share a filter\", \"Get a filter with the REST API\", \"Change the filter owner\"]"
+FLAG headings not a list
+PAGE source_file="administration/configure-time-tracking.md" | title="Configure time tracking" | url="https://support.atlassian.com/jira-cloud-administration/docs/configure-time-tracking/" | last_updated="2024-12-17" | headings="[\"Before you begin\", \"Turn time tracking on or off\", \"Set the working hours and time format\", \"Who can log work\"]"
+FLAG headings not a list
+PAGE source_file="issues/link-an-issue.md" | title="Link issues to other issues" | url="https://support.atlassian.com/jira-software-cloud/docs/link-an-issue/" | last_updated="2025-02-11" | headings="[\"Before you begin\", \"Link an issue\", \"Remove an issue link\", \"Find linked issues with JQL\"]"
+FLAG headings not a list
+PAGE source_file="boards/use-your-scrum-backlog.md" | title="Use your Scrum backlog" | url="https://support.atlassian.com/jira-software-cloud/docs/use-your-scrum-backlog/" | last_updated="2025-01-09" | headings="[\"How the backlog is organized\", \"Rank issues in the backlog\", \"Plan a sprint from the backlog\", \"Hide or show the backlog\"]"
+FLAG headings not a list
+PAGE source_file="administration/configure-outgoing-email.md" | title="Configure outgoing email notifications" | url="https://support.atlassian.com/jira-cloud-administration/docs/configure-outgoing-email/" | last_updated="2025-02-04" | headings="[\"Before you begin\", \"Turn outgoing email on or off\", \"Change the sender address\", \"Check the mail queue\"]"
+FLAG headings not a list
+PAGE source_file="administration/configure-workflow-schemes.md" | title="Configure workflow schemes" | url="https://support.atlassian.com/jira-cloud-administration/docs/configure-workflow-schemes/" | last_updated="2025-03-03" | headings="[\"How workflow schemes work\", \"Before you begin\", \"Assign a workflow to an issue type\", \"Switch a project to a different workflow scheme\"]"
+FLAG headings not a list
+PAGE source_file="administration/create-a-custom-field.md" | title="Create a custom field" | url="https://support.atlassian.com/jira-cloud-administration/docs/create-a-custom-field/" | last_updated="2025-02-06" | headings="[\"Before you begin\", \"Add a custom field\", \"Set the field context\", \"Add the field to a screen\"]"
+FLAG headings not a list
+PAGE source_file="administration/use-the-scheduled-trigger-in-automation.md" | title="Run automation rules on a schedule" | url="https://support.atlassian.com/jira-cloud-administration/docs/use-the-scheduled-trigger-in-automation/" | last_updated="2024-12-16" | headings="[\"How the scheduled trigger works\", \"Before you begin\", \"Create a scheduled rule\", \"Limit the rule with JQL\"]"
+FLAG headings not a list
+PAGE source_file="work-management/use-the-list-view.md" | title="Work with issues in the list view" | url="https://support.atlassian.com/jira-work-management/docs/use-the-list-view/" | last_updated="2025-01-14" | headings="[\"About the list view\", \"Edit issues inline\", \"Group and sort the list\", \"Show or hide columns\"]"
+FLAG headings not a list
+PAGE source_file="administration/manage-webhooks.md" | title="Manage webhooks" | url="https://support.atlassian.com/jira-cloud-administration/docs/manage-webhooks/" | last_updated="2025-03-05" | headings="[\"Before you begin\", \"Register a webhook\", \"Filter events with JQL\", \"Check the webhook payload\"]"
+FLAG headings not a list
+PAGE source_file="boards/create-a-board.md" | title="Create a board" | url="https://support.atlassian.com/jira-software-cloud/docs/create-a-board/" | last_updated="2025-01-09" | headings="[\"Before you begin\", \"Create a Scrum or Kanban board\", \"Choose where the board gets its issues\", \"Change the board filter later\"]"
+FLAG headings not a list
+PAGE source_file="work-management/use-the-calendar-view.md" | title="Plan work in the calendar view" | url="https://support.atlassian.com/jira-work-management/docs/use-the-calendar-view/" | last_updated="2024-12-16" | headings="[\"How the calendar view works\", \"Schedule an issue\", \"Filter the calendar\", \"Show unscheduled work\"]"
+FLAG headings not a list
+PAGE source_file="administration/add-edit-and-delete-an-issue-type.md" | title="Add, edit, and delete an issue type" | url="https://support.atlassian.com/jira-cloud-administration/docs/add-edit-and-delete-an-issue-type/" | last_updated="14/01/2025" | headings="[\"Before you begin\", \"Add an issue type\", \"Edit an issue type\", \"Delete an issue type\"]"
+FLAG last_updated must be a real ISO date (YYYY-MM-DD)
+FLAG headings not a list
+PAGE source_file="administration/audit-activities-in-jira-applications.md" | title="Audit activities in Jira applications" | url="https://support.atlassian.com/jira-cloud-administration/docs/audit-activities-in-jira-applications/" | last_updated="2025-02-26" | headings="[\"Before you begin\", \"View the audit log\", \"Search and filter audit records\", \"Export audit records\"]"
+FLAG headings not a list
+PAGE source_file="software/start-a-sprint.md" | title="Start a sprint" | url="https://support.atlassian.com/jira-software-cloud/docs/start-a-sprint/" | last_updated="2025-01-14" | headings="[\"Before you begin\", \"Start a sprint from the backlog\", \"Set the sprint duration and goal\", \"Run more than one sprint at a time\"]"
+FLAG headings not a list
+PAGE source_file="administration/add-edit-and-delete-resolutions.md" | title="Add, edit, and delete resolutions" | url="https://support.atlassian.com/jira-cloud-administration/docs/add-edit-and-delete-resolutions/" | last_updated="2024-12-19" | headings="[\"How resolutions work\", \"Add a resolution\", \"Edit or delete a resolution\", \"Set the resolution on a transition\"]"
+FLAG headings not a list
+PAGE source_file="administration/manage-notifications-in-team-managed-projects.md" | title="Manage notifications in team-managed projects" | url="https://support.atlassian.com/jira-cloud-administration/docs/manage-notifications-in-team-managed-projects/" | last_updated="2025-02-11" | headings="[\"Before you begin\", \"Change who gets notified\", \"Turn off a notification event\", \"How team-managed notifications differ\"]"
+FLAG headings not a list
+PAGE source_file="administration/view-the-audit-log-for-automation-rules.md" | title="View the audit log for an automation rule" | url="https://support.atlassian.com/jira-cloud-administration/docs/view-the-audit-log-for-automation-rules/" | last_updated="2025-03-04" | headings="[\"Before you begin\", \"Open a rule's audit log\", \"Understand rule statuses\", \"Debug a failing rule\"]"
+FLAG headings not a list
+PAGE source_file="administration/customize-the-look-and-feel-of-jira-applications.md" | title="Customize the look and feel of Jira" | url="https://support.atlassian.com/jira-cloud-administration/docs/customize-the-look-and-feel-of-jira-applications/" | last_updated="2025-02-06" | headings="[\"Before you begin\", \"Change the site logo and title\", \"Change the default color scheme\", \"Reset to the default theme\"]"
+FLAG headings not a list
+PAGE source_file="software/configure-quick-filters.md" | title="Configure quick filters on a board" | url="https://support.atlassian.com/jira-software-cloud/docs/configure-quick-filters/" | last_updated="2025-02-11" | headings="[\"Before you begin\", \"Add a quick filter\", \"Example quick filters\", \"Edit or delete a quick filter\"]"
+FLAG headings not a list
+PAGE source_file="work-management/use-the-summary-view.md" | title="Track project progress in the summary view" | url="https://support.atlassian.com/jira-work-management/docs/use-the-summary-view/" | last_updated="2025-03-07" | headings="[\"Open the summary view\", \"What the summary view shows\", \"Filter the summary view\", \"Share a summary with your team\"]"
+FLAG headings not a list
+Total pages: 40
+Pages with lineage gaps: 40
+source_file gaps: 0
+url gaps: 0
+last_updated gaps: 3
+headings gaps: 40

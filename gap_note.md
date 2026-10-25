@@ -2,16 +2,21 @@
 
 Source: `exports/jira-help-2025-03-07/Jira Cloud Help Docs Markdown Export (7 March 2025).json`. The requested filename `atlassian_jira_cloud_help_docs_export_2025-03-07.json` was not present; this available export contains 40 pages.
 
-`inventory_output.txt` contains the full loader printout: 89 lines (40 page lines, 43 flag lines, and 6 summary lines). Counts below are affected pages per field; a page can have gaps in multiple fields.
+`inventory_output.txt` contains the full loader printout: 93 lines (40 page lines, 46 flag lines, and 7 summary lines). Counts below are affected pages per field; a page can have gaps in multiple fields.
 
 ## Gap counts
 
 | Field | Gaps |
 | --- | ---: |
 | source_file | 0 |
-| url | 0 |
+| title | 0 |
+| url | 2 |
 | last_updated | 3 |
 | headings | 40 |
+
+## Shared URLs
+
+Both `Manage project permissions` (`administration/manage-project-permissions.md`) and `Grant the Browse projects permission to a group` (`administration/grant-browse-projects-to-a-group.md`) use `https://support.atlassian.com/jira-cloud-administration/docs/manage-project-permissions/`. Each page receives a URL flag naming both records: a chunk could otherwise cite the wrong page.
 
 ## last_updated
 
@@ -23,7 +28,7 @@ Source: `exports/jira-help-2025-03-07/Jira Cloud Help Docs Markdown Export (7 Ma
 
 ## headings
 
-All 40 pages have a JSON-encoded string in `headings`, rather than a list. The loader flags each as `not a list` and does not coerce it. For the comparisons below only, the string is decoded and the body heading markers are removed using the loader's rules. The original export is unchanged.
+All 40 pages have a JSON-encoded string in `headings`, rather than a list. The loader flags each as `not a list` and does not coerce it. For additional diagnostics, the loader decodes the string without replacing the exported value. Duplicate section headings are checked within each page, so common section names across different pages are allowed. For the comparisons below, the string is decoded and the body heading markers are removed using the loader's rules. The original export is unchanged.
 
 | Page | Reasons |
 | --- | --- |
@@ -67,6 +72,10 @@ All 40 pages have a JSON-encoded string in `headings`, rather than a list. The l
 | Customize the look and feel of Jira | `headings` is a JSON-encoded string, not a list; omits body H1: Customize the look and feel of Jira; decoded section titles match the remaining body headings in order. |
 | Configure quick filters on a board | `headings` is a JSON-encoded string, not a list; omits body H1: Configure quick filters on a board; decoded section titles match the remaining body headings in order. |
 | Track project progress in the summary view | `headings` is a JSON-encoded string, not a list; omits body H1: Track project progress in the summary view; decoded section titles match the remaining body headings in order. |
+
+### Duplicate section headings
+
+`What are permission schemes?` lists `Before you begin` twice, in both the decoded headings and the Markdown body. The loader emits an additional duplicate-section flag for this page because a section citation could be ambiguous. The other 39 pages have no repeated section titles. The headings gap count remains 40 affected pages, even though this page has two heading flags. The missing H1 described above is a shared export convention; it is distinct from this page-specific ambiguity.
 
 ## Pinecone and embedding configuration
 

@@ -2,6 +2,7 @@
 
 import json
 import re
+from collections import Counter, defaultdict
 from datetime import date
 from pathlib import Path
 
@@ -30,10 +31,10 @@ def load_pages(exports_dir):
         dates, heads = page["last_updated"], page["headings"]
         print(inventory_line(page))
 
-def page_flags(page: dict) -> list[tuple[str, str]]:
+def page_flags(page: dict, url_pages: dict | None = None) -> list[tuple[str, str]]:
     """Return lineage gaps without repairing or coercing export values."""
     flags = []
-    for field in ("source_file", "url"):
+    for field in ("source_file", "title", "url"):
         value = page.get(field)
         if field not in page:
             flags.append((field, "missing"))
@@ -75,12 +76,33 @@ def page_flags(page: dict) -> list[tuple[str, str]]:
             ]
             if headings != body_headings:
                 flags.append(("headings", "disagree with body_markdown"))
+    # Decode only for diagnostics; preserve the exported value and its type flag.
+    diagnostic_headings = headings
+    if isinstance(headings, str):
+        try:
+            diagnostic_headings = json.loads(headings)
+        except json.JSONDecodeError:
+            pass
+    if isinstance(diagnostic_headings, list):
+        repeated = [text for text, count in Counter(
+            h for h in diagnostic_headings if isinstance(h, str)
+        ).items() if count > 1]
+        if repeated:
+            flags.append(("headings", "duplicate section headings: " + json.dumps(repeated, ensure_ascii=False)))
+    url = page.get("url")
+    if url_pages and isinstance(url, str) and len(url_pages.get(url, [])) > 1:
+        flags.append(("url", "shared by pages: " + json.dumps(url_pages[url], ensure_ascii=False)))
     return flags
 
 
 def print_inventory(documents: list[dict]) -> None:
     """Print one inventory line per page, its flags, and explicit totals."""
-    counts = dict.fromkeys(("source_file", "url", "last_updated", "headings"), 0)
+    counts = dict.fromkeys(("source_file", "title", "url", "last_updated", "headings"), 0)
+    url_pages = defaultdict(list)
+    for page in documents:
+        url = page.get("url")
+        if isinstance(url, str) and url.strip():
+            url_pages[url].append({"title": page.get("title"), "source_file": page.get("source_file")})
     flagged_pages = 0
     for page in documents:
         fields = ("source_file", "title", "url", "last_updated", "headings")
@@ -88,10 +110,11 @@ def print_inventory(documents: list[dict]) -> None:
             f"{field}={json.dumps(page.get(field), ensure_ascii=False)}"
             for field in fields
         ))
-        flags = page_flags(page)
+        flags = page_flags(page, url_pages)
         flagged_pages += bool(flags)
         for field, reason in flags:
             print(f"FLAG {field} {reason}")
+        for field in {field for field, _ in flags}:
             counts[field] += 1
     print(f"Total pages: {len(documents)}")
     print(f"Pages with lineage gaps: {flagged_pages}")

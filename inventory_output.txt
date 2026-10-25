@@ -1,9 +1,12 @@
 PAGE source_file="administration/manage-project-permissions.md" | title="Manage project permissions" | url="https://support.atlassian.com/jira-cloud-administration/docs/manage-project-permissions/" | last_updated="2025-02-18" | headings="[\"Before you begin\", \"Grant a project permission\", \"Remove a project permission\", \"Troubleshoot permission errors\"]"
 FLAG headings not a list
+FLAG url shared by pages: [{"title": "Manage project permissions", "source_file": "administration/manage-project-permissions.md"}, {"title": "Grant the Browse projects permission to a group", "source_file": "administration/grant-browse-projects-to-a-group.md"}]
 PAGE source_file="administration/manage-permission-schemes.md" | title="What are permission schemes?" | url="https://support.atlassian.com/jira-cloud-administration/docs/manage-permission-schemes/" | last_updated="2025-01-28" | headings="[\"How permission schemes work\", \"Before you begin\", \"Create a permission scheme\", \"Before you begin\", \"Associate a scheme with a project\"]"
 FLAG headings not a list
+FLAG headings duplicate section headings: ["Before you begin"]
 PAGE source_file="administration/grant-browse-projects-to-a-group.md" | title="Grant the Browse projects permission to a group" | url="https://support.atlassian.com/jira-cloud-administration/docs/manage-project-permissions/" | last_updated="2025-03-04" | headings="[\"Before you begin\", \"Grant the Browse projects permission {#browse-projects}\", \"Check that the group can see the project\"]"
 FLAG headings not a list
+FLAG url shared by pages: [{"title": "Manage project permissions", "source_file": "administration/manage-project-permissions.md"}, {"title": "Grant the Browse projects permission to a group", "source_file": "administration/grant-browse-projects-to-a-group.md"}]
 PAGE source_file="administration/what-are-issue-security-levels.md" | title="What are issue security levels?" | url="https://support.atlassian.com/jira-cloud-administration/docs/configure-issue-security-schemes/" | last_updated="07/02/2025" | headings="[\"How issue security differs from project permissions\", \"Create an issue security scheme\", \"Add security levels\", \"Set a default level\"]"
 FLAG last_updated must be a real ISO date (YYYY-MM-DD)
 FLAG headings not a list
@@ -84,6 +87,7 @@ FLAG headings not a list
 Total pages: 40
 Pages with lineage gaps: 40
 source_file gaps: 0
-url gaps: 0
+title gaps: 0
+url gaps: 2
 last_updated gaps: 3
 headings gaps: 40
